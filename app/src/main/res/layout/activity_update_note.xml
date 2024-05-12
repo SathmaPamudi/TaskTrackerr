@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/updateback"
+    tools:context=".UpdateNoteActivity">
+
+    <TextView
+        android:id="@+id/editNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/amaranth_bold_italic"
+        android:text="Edit Daily Progress"
+        android:textColor="@color/pink"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/UpdateSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="@id/editNoteHeading"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/updateTitleEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the title"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/editNoteHeading"
+        android:background="@drawable/pink_border"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:maxLines="1"
+        android:fontFamily="@font/poppins" />
+
+    <EditText
+        android:id="@+id/updateContentEditText"
+        android:layout_width="371dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/updateTitleEdittext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/pink_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter the description"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+
+
+    <!-- Date TextView -->
+    <EditText
+        android:id="@+id/updateDateTextview"
+        android:layout_width="371dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/updateContentEditText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/pink_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter date"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/updatePriorityTextview"
+        android:layout_width="371dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/updateDateTextview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/pink_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter priority"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
